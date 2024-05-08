@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Intake Tracker Menu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div>
+        <h1>Water Intake Tracker Menu</h1>
+    </div>
+    <div class="navbar">
+        <a href="#" class="navbar-logo">Fitkit</a>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="/maini.html">Dashboard</a></li>
+            <li><a href="#">Videos</a></li>
+        </ul>
+    </div>
+    <ul>
+        <li><a href="{{ url_for('add_daily_log') }}">Add a log for water intake</a></li>
+        <li><a href="{{ url_for('view_daily_intake') }}">View water intake</a></li>
+        <li><a href="{{ url_for('delete_log')}}">Delete log</a></li>
+        <li><a href="{{ url_for('set_daily_target') }}">Set daily water consumption target</a></li>
+        <li><a href="{{ url_for('monthly_avg_intake') }}">Calculate average consumption in the current month</a></li>
+        <li><a href="{{ url_for('plot_water_intake') }}">Plot water consumption graph</a></li>
+        <li><a href="{{ url_for('exit_app') }}">Exit</a></li>
+    </ul>
+</body>
+</html>

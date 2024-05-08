@@ -1,0 +1,7 @@
+Sit Up,https://youtu.be/MQDopvLZOS8
+Plank,https://youtu.be/Ehy8G39d_PM
+Bicep Curl,https://youtu.be/Ehy8G39d_PM
+Tricep Extension,https://youtu.be/Ehy8G39d_PM
+Pushups,https://youtu.be/IODxDxX7oi4
+Squat,https://youtu.be/YaXPRqUwItQ
+Lateral Raise,https://youtu.be/kDqklk1ZESo

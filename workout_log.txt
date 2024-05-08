@@ -1,0 +1,13 @@
+Exercise:12
+Duration:3.0
+Sets:4
+Reps per set:5
+Date:2023-08-31 22:15:46.609291
+
+
+Exercise:60
+Duration:1.0
+Sets:2
+Reps per set:1
+Date:2023-10-12
+

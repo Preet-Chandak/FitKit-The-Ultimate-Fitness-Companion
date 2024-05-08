@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Water Intake Log</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div><h1>Add Water Intake Log</h1></div>
+    <form method="POST" action="{{ url_for('add_daily_log') }}">
+        <label for="date">Date (YYYY-MM-DD):</label>
+        <input type="text" id="date" name="date" required><br><br>
+        <label for="amount">Amount (ml):</label>
+        <input type="text" id="amount" name="amount" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

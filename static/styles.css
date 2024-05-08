@@ -1,0 +1,156 @@
+/* styles.css */
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+ul {
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+   margin: 10px;
+   padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input[type="text"] {
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body {
+    background-color: #212428;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+input {
+    width: 400px;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius:10px ;
+    letter-spacing: 1px;
+     }
+
+ #i1{
+      background-color: orange;
+      color: black;
+  }
+  #i1:hover{
+      background-color: white;
+      color: black;
+  }
+        
+#i2:hover{
+    background-color: white;
+    color: black;
+}
+
+#i3:hover{
+    background-color: white;
+    color: black;
+}
+
+#i4:hover{
+    background-color: white;
+    color: black;
+}
+#i2{
+    background-color: lightblue;
+       color: black;
+}
+
+#i3{
+    background-color: lightgreen;
+    color: black;
+}
+
+#i4{
+       background-color: yellow;
+       color: black;
+   }
+.navbar {
+    position: sticky;
+    
+    top: 0;
+         background-color: #010b19; /* Different color for the header */
+         padding: 10px 0;
+         display: flex;
+         align-items: center;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 20px;
+        margin: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for the header */
+    }
+
+   .navbar-logo {
+       color: #fff;
+       font-size: 24px;
+       text-decoration: none;
+   }
+   .navbar-links {
+       list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .navbar-links li {
+        margin-right: 20px;
+        }
+
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+        

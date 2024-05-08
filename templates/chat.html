@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Support Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #botForm {
+            display: flex;
+            align-items: center;
+        }
+
+        #userInput {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+
+        #userInput:focus {
+            outline: none;
+        }
+
+        
+
+        #askButton:hover {
+            background-color: #0056b3;
+        }
+
+        #botResponse {
+            margin-top: 20px;
+        }
+
+        #botResponse p {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Customer Support Bot</h1>
+    <p>Welcome to our customer support bot. Please enter your question below:</p>
+    
+    <form id="botForm">
+        <input type="text" id="userInput" placeholder="Type your question here"><br><br>
+        <button type="button" onclick="askQuestion()">Ask</button>
+    </form>
+    
+    <div id="botResponse"></div>
+    
+    <script>
+        function askQuestion() {
+            const userInput = document.getElementById("userInput").value;
+            const botResponseDiv = document.getElementById("botResponse");
+            
+            if (userInput.trim() === "") {
+                return;
+            }
+            
+            botResponseDiv.innerHTML += "<p>You: " + userInput + "</p>";
+        
+            fetch("/ask", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: `user_input=${userInput}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                botResponseDiv.innerHTML += "<p>Customer Support Bot: " + data.response + "</p>";
+            });
+            
+            document.getElementById("userInput").value = ""; 
+        }
+    </script>
+</body>
+</html>

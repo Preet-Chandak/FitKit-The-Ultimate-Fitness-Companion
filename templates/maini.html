@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212428;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        input {
+            width: 400px;
+            margin: 10px;
+            height: 100px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 25px;
+            border-radius:10px ;
+            letter-spacing: 1px;
+            
+        }
+
+        #i1{
+            background-color: orange;
+            color: black;
+        }
+        #i1:hover{
+            background-color: white;
+            color: black;
+        }
+        
+        #i2:hover{
+            background-color: white;
+            color: black;
+        }
+        
+        #i3:hover{
+            background-color: white;
+            color: black;
+        }
+        
+        #i4:hover{
+            background-color: white;
+            color: black;
+        }
+        #i2{
+            background-color: lightblue;
+            color: black;
+        }
+        
+        #i3{
+            background-color: lightgreen;
+            color: black;
+        }
+        
+        #i4{
+            background-color: yellow;
+            color: black;
+        }
+        .navbar {
+            position: sticky;
+            
+            top: 0;
+            background-color: #010b19; /* Different color for the header */
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 20px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 20px;
+            margin: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for the header */
+        }
+
+        .navbar-logo {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-links li {
+            margin-right: 20px;
+        }
+
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+        .steps{
+            position: absolute;
+            top: 500px;
+            left: 100px;  
+        }
+        .steps2{
+            position: absolute;
+            top: 500px;
+            left: 500px;  
+        }
+        .imgg{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -180px;
+            left: -40px;
+            border-radius: 50%;
+        }
+        .imgg2{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            top: -180px;
+            left: 700px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-logo">Fitkit</a>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="/maini.html">Dashboard</a></li>
+            
+            <li><a href="/report">Report</a></li>
+        </ul>
+    </div>
+    <div class="container">
+    <form action = "/project" method = "POST">
+        <input type = "submit" name = "c1" id="i1" value = "Workout_log">
+        <br>
+        <input type  = "submit" name = "c1" id="i2" value = "water_intake">
+        <br>
+        <input type = "submit" name = "c1" id="i3" value = "calorie tracker">
+        <br>
+        <input type = "submit" name = "c1" id="i4" value = "bmi"> 
+    </form>
+</div>
+<div class="steps">
+    <a href="/steps.html"><img class="imgg" src="static\images\st.jpg" alt=""></a>
+</div>
+<div class="steps2">
+    <a href="/music.html"><img class="imgg2" src="static\images\music.jpg" alt=""></a>
+</div>
+</body>
+</html>

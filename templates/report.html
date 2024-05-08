@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Report</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Health Report</h1>
+    <form method="POST" action="/report">
+        <button type="submit" class="btn btn-primary">Generate PDF Report</button>
+    </form>
+    
+    <p><a href="{{ url_for('menu') }}">Back to Menu</a></p>
+</body>
+</html>

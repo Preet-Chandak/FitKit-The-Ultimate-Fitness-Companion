@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Average Monthly Intake</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div>
+        <h1>Calculate Average Monthly Water Intake</h1>
+    </div>
+    <form method="POST">
+        <p>Click the button below to calculate the average monthly water intake:</p>
+        <button type="submit">Calculate Average</button>
+    </form>
+    <p>Average Monthly Intake: {{ average_monthly_intake }} ml</p>
+    <p><a href="{{ url_for('menu') }}">Back to Menu</a></p>
+</body>
+</html>

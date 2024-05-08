@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know your BMI</title>
+    <style>
+        body {
+            background-color: #212428;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        input {
+            width: 400px;
+            margin: 10px;
+            height: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+            border-radius: 10px;
+            letter-spacing: 1px;
+        }
+        #i1 {
+            background-color: orange;
+            color: black;
+        }
+        #i1:hover {
+            background-color: white;
+            color: black;
+        }
+        #i2:hover {
+            background-color: white;
+            color: black;
+        }
+        #i3:hover {
+            background-color: white;
+            color: black;
+        }
+        #i4:hover {
+            background-color: white;
+            color: black;
+        }
+        #i2 {
+            background-color: lightblue;
+            color: black;
+        }
+        #i3 {
+            background-color: lightgreen;
+            color: black;
+        }
+        #i4 {
+            background-color: yellow;
+            color: black;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #010b19;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-left: 20px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 20px;
+            margin: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-logo {
+            color: #fff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .navbar-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar-links li {
+            margin-right: 20px;
+        }
+        .navbar-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .navbar-links a:hover {
+            text-decoration: underline;
+        }
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .image-container {
+            text-align: center;
+        }
+        input[type="radio"] {
+            transform: scale(0.5); /* Adjust the scale factor as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navbar-logo">APPNAME</a>
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Videos</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <br><br><br><h1>BMI Calculator</h1>
+        <form action="result.html" method="POST" style="display: flex; flex-direction: column; align-items: center;">
+            <label for="name" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-transform: uppercase; font-size: 18px;">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="weight" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-transform: uppercase; font-size: 18px;">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+            <br><br>
+            <label style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-transform: uppercase; font-size: 18px;">Height<small>(Either enter in feet and inch OR centimeter)</small>:</label>
+
+            <input type="radio" id="height_f" name="height_unit" value="f" required>
+            <label for="height_f">Feet and Inches:</label>
+            <input type="number" id="feet" name="feet" placeholder="Feet" step="1">
+            <input type="number" id="inches" name="inches" placeholder="Inches" step="0.1">
+
+            <input type="radio" id="height_c" name="height_unit" value="c" required>
+            <label for="height_c">Centimeters:</label>
+            <input type="number" id="height_cm" name="height_cm" placeholder="Centimeters">
+
+            <input type="submit" value="Calculate BMI">
+        </form>
+    </div>
+    
+    <div class="image-container">
+        <br><br><br><br><br><br><br><br><img src="static\images\image_bmi1.png" alt="BMI Ranges" width="600" height="400">
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+# Python-related
+__pycache__/
+*.pyc
+
+# Flask-related
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env
+
+# Node.js dependencies
+node_modules/
+
+# Compiled files
+*.pyc
+*.class
+*.o
+*.ko
+*.obj
+*.elf
+
+# Temporary files
+*~
+\#*\#
+*.swp
+._*
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

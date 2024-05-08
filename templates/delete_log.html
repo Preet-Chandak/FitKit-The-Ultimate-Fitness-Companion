@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Water Intake Log</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div><h1>Delete Water Intake Log</h1>
+    <form method="POST" action="/delete_log"></div>
+        <label for="date">Enter the date to delete (e.g., 2023-09-21):</label>
+        <input type="text" id="date" name="date" required>
+        <button type="submit">Delete Log</button>
+    </form>
+    <p><a href="{{ url_for('menu') }}">Back to Menu</a></p>
+</body>
+</html>
